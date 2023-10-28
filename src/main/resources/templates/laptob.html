@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Data Laptob</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <script th:src="@{/js/action.js}"></script>
+  </head>
+  <body>
+    <h1>Data Laptob</h1>
+    <table border="1">
+      <tr>
+        <th>Id</th>
+        <th>Merk</th>
+        <th>Tipe</th>
+        <th>Harga</th>
+      </tr>
+      <tr>
+        <td th:text="${dataLaptob.id}"></td>
+        <td th:text="${dataLaptob.merk}"></td>
+        <td th:text="${dataLaptob.tipe}"></td>
+        <td th:text="${dataLaptob.harga}"></td>
+      </tr>
+    </table>
+    <br />
+    <h3>
+      <a th:href="@{message-expression}" th:onclick="showAlert()"
+        >Ke Halman Message Expression</a
+      >
+    </h3>
+  </body>
+</html>
