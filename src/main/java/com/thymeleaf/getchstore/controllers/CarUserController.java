@@ -22,7 +22,7 @@ public class CarUserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("index")
+    @GetMapping("/index")
     public String home(Model model) {
 
         List<Car> cars = carService.getAllCars();

@@ -1,13 +1,17 @@
 package com.thymeleaf.getchstore.models;
 
 public class Car {
-    private int id;
+    private Integer id;
     private String merk;
     private String model;
-    private int year;
+    private Integer year;
     private String color;
 
-    public Car(int id, String merk, String model, int year, String color) {
+    public Car() {
+
+    }
+
+    public Car(Integer id, String merk, String model, Integer year, String color) {
         this.id = id;
         this.merk = merk;
         this.model = model;
@@ -15,11 +19,11 @@ public class Car {
         this.color = color;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -39,11 +43,11 @@ public class Car {
         this.model = model;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 

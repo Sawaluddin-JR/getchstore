@@ -22,7 +22,7 @@ public class UserController {
         userService.initializeUsers();
     }
 
-    @GetMapping("user")
+    @GetMapping("/user")
     public String listUsers(Model model) {
         // List<User> users = new ArrayList<>();
         // users.add(new User(1, "Syawaluddin", 18, "Sidimpuan", "USERS"));

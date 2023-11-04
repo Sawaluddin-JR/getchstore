@@ -16,15 +16,15 @@ public class CarService {
     }
 
     public void addCar(Car car) {
-        carList.add(car);
+        this.carList.add(car);
     }
 
-    public void initializeCars() {
-        // Inisialisasi data mobil saat aplikasi dimulai
-        Car car1 = new Car(1, "Toyota", "Avanza", 2020, "Black");
-        addCar(car1);
+    // public void initializeCars() {
+    // // Inisialisasi data mobil saat aplikasi dimulai
+    // Car car1 = new Car(1, "Toyota", "Avanza", 2020, "Black");
+    // addCar(car1);
 
-        Car car2 = new Car(2, "Honda", "Brio", 2018, "Silver");
-        addCar(car2);
-    }
+    // Car car2 = new Car(2, "Honda", "Brio", 2018, "Silver");
+    // addCar(car2);
+    // }
 }
